@@ -1,1 +1,3 @@
-console.log("123")
+function showAlert() {
+    alert("Alert from JS file");
+}
