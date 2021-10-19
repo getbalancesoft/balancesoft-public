@@ -1,3 +1,3 @@
-function showAlert() {
-    alert("Alert from JS file");
-}
+function test() {
+  console.log(123)
+  }
