@@ -1,3 +1,4 @@
-function showAlert() {
-    alert("Alert from JS file");
-}
+'use strict';
+! function() {
+  alert("Alert from JS file");
+}();
