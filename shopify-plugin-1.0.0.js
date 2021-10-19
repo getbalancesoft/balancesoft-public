@@ -24,7 +24,3 @@ function send_encrypt(transmit_dict, api_key, secret_key) {
     .then(data => console.log(data));
   return
 }
-
-function test() {
-  console.log("1234")
-}
