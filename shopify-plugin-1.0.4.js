@@ -58,9 +58,12 @@ window.balancesoftPay = function init(options) {
     document.getElementById(
       "last_checked_time"
     ).innerHTML = `Last Checked: ${d.toLocaleTimeString()}`;
+    url =
+      dev_api_url
+        ? dev_api_url: "https://api.getbalancesoft.com/v1/shopify_create_request_from_order";
     document.getElementById(
       "link_to_pay"
-    ).innerHTML = `Pay Link: <a href=`${dev_api_url?http://${response_data?.link}:https://${response_data?.link}}` target="_blank">Balancesoft Pay</a>`;
+    ).innerHTML = `Pay Link: <a href=`${response_data?.link}` target="_blank">Balancesoft Pay</a>`;
     if (response_data?.status == "PAID") {
       clearTimeout(timer);
       timer = 0;
