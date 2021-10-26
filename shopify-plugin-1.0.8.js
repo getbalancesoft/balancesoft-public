@@ -37,7 +37,7 @@ window.balancesoftPay = function init(options) {
       .then((data) => {
         document.getElementById(
           "img_href_wrapper"
-        ).href = `http://${data?.data?.link}`;
+        ).href = `${data?.data?.link}`;
         return data?.data;
       });
   }
