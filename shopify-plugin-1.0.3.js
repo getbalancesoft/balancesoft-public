@@ -60,7 +60,7 @@ window.balancesoftPay = function init(options) {
     ).innerHTML = `Last Checked: ${d.toLocaleTimeString()}`;
     document.getElementById(
       "link_to_pay"
-    ).innerHTML = `Pay Link: <a href=http://${response_data?.link} target="_blank">Balancesoft Pay</a>`;
+    ).innerHTML = `Pay Link: <a href=`${dev_api_url?http://${response_data?.link}:https://${response_data?.link}}` target="_blank">Balancesoft Pay</a>`;
     if (response_data?.status == "PAID") {
       clearTimeout(timer);
       timer = 0;
